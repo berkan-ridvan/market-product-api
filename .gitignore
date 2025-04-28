@@ -31,4 +31,8 @@ build/
 
 # MongoDB
 data/
-mongodb/ 
+mongodb/
+
+# Uploaded files
+public/images/*
+!public/images/default.jpg 

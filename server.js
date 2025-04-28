@@ -4,13 +4,18 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
+require('dotenv').config();
+
 const app = express();
 
+// Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // MongoDB bağlantısı
-mongoose.connect('mongodb://localhost:27017/groceryDB', { 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/groceryDB', { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
 }).then(() => {
@@ -181,13 +186,20 @@ app.get('/api/cheapest', async (req, res) => {
     }
 });
 
-// Statik dosyaları sun
-app.use(express.static('public'));
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
-
 // Ana sayfa
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ message: 'Something went wrong!' });
+});
+
+// 404 handler
+app.use((req, res) => {
+    res.status(404).json({ message: 'Route not found' });
 });
 
 // Sunucuyu başlat

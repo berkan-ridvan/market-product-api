@@ -1,70 +1,70 @@
 # Market Price Finder
 
-Bu proje, market ürünlerinin fiyatlarını ve bilgilerini yönetmek için geliştirilmiş bir web uygulamasıdır.
+A web application developed for managing market product prices and information.
 
-## Özellikler
+## Features
 
-- Ürün ekleme, düzenleme ve silme
-- Ürün arama ve filtreleme
-- Fiyat ve puan sıralama
-- Resim yükleme desteği
-- Responsive tasarım
+- Add, edit, and delete products
+- Search and filter products
+- Sort by price and rating
+- Image upload support
+- Responsive design
 
-## Kurulum
+## Installation
 
-1. Projeyi klonlayın:
+1. Clone the project:
 ```bash
 git clone https://github.com/berkan-ridvan/market-product-api.git
 cd market-product-api
 ```
 
-2. Gerekli paketleri yükleyin:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. MongoDB'yi başlatın:
+3. Start MongoDB:
 ```bash
 mongod
 ```
 
-4. Uygulamayı başlatın:
+4. Start the application:
 ```bash
 npm run dev
 ```
 
-Uygulama http://localhost:5000 adresinde çalışacaktır.
+The application will be running at http://localhost:5000
 
-## Kullanım
+## Usage
 
-### Ürün Ekleme
-1. Ana sayfada "Add/Edit Item" formunu kullanın
-2. Ürün bilgilerini girin (başlık, tür, açıklama, fiyat, puan)
-3. İsteğe bağlı olarak ürün resmi yükleyin
-4. "Save Item" butonuna tıklayın
+### Adding Products
+1. Use the "Add/Edit Item" form on the main page
+2. Enter product details (title, type, description, price, rating)
+3. Optionally upload a product image
+4. Click "Save Item"
 
-### Ürün Arama ve Filtreleme
-- Arama kutusunu kullanarak ürünleri arayabilirsiniz
-- Kategori filtresini kullanarak ürünleri türe göre filtreleyebilirsiniz
-- Sıralama seçeneğini kullanarak ürünleri fiyat veya puana göre sıralayabilirsiniz
+### Search and Filter
+- Use the search box to search for products
+- Use the category filter to filter products by type
+- Use the sort option to sort products by price or rating
 
-### Ürün Düzenleme
-1. Ürün kartındaki "Edit" butonuna tıklayın
-2. Form otomatik olarak doldurulacaktır
-3. Değişiklikleri yapın ve "Save Item" butonuna tıklayın
+### Editing Products
+1. Click the "Edit" button on a product card
+2. The form will be automatically filled
+3. Make your changes and click "Save Item"
 
-### Ürün Silme
-- Ürün kartındaki "Delete" butonuna tıklayarak ürünü silebilirsiniz
+### Deleting Products
+- Click the "Delete" button on a product card to remove it
 
-## Teknolojiler
+## Technologies
 
 - Node.js
 - Express.js
 - MongoDB
-- Multer (dosya yükleme)
+- Multer (file upload)
 - Bootstrap 5
 - JavaScript (ES6+)
 
-## Lisans
+## License
 
 MIT
