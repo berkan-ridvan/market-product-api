@@ -14,8 +14,8 @@ Bu proje, market ürünlerinin fiyatlarını ve bilgilerini yönetmek için geli
 
 1. Projeyi klonlayın:
 ```bash
-git clone https://github.com/kullaniciadi/market-price-finder.git
-cd market-price-finder
+git clone https://github.com/berkan-ridvan/market-product-api.git
+cd market-product-api
 ```
 
 2. Gerekli paketleri yükleyin:
@@ -67,4 +67,4 @@ Uygulama http://localhost:5000 adresinde çalışacaktır.
 
 ## Lisans
 
-MIT 
+MIT
