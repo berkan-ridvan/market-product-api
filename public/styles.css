@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.store-info, .location-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.store-info .material-icons, .location-info .material-icons {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.rating {
+    color: #ffc107;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rating .material-icons {
+    font-size: 1.2rem;
+    margin-right: 2px;
+}
+
+.star-filled {
+    color: #ffc107;
+}
+
+.star-empty {
+    color: #e4e5e9;
+}
+
+.price {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#search {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.form-select {
+    border-radius: 5px;
+    border-color: #ced4da;
+    padding: 10px 20px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.form-control, .form-select {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+} 
